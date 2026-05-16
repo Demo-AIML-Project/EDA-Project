@@ -1,83 +1,289 @@
-# 📊 Toàn Diện Kiến Thức: Trực Quan Hóa Dữ Liệu và EDA
+# 📊 COMPLETE README — Data Visualization & EDA Foundation
 
-## Chủ đề 0: Data Visualization & EDA
-### (Matplotlib • Seaborn • Phân tích dữ liệu • Biểu đồ)
+# Chủ đề 0: Trực quan hóa dữ liệu và EDA
+## (Pandas • NumPy • Matplotlib • Seaborn • Data Analysis • Visualization)
 
 ---
 
-# 📖 1. Khái niệm EDA là gì?
+# 📖 Giới thiệu
 
-EDA (Exploratory Data Analysis) là quá trình phân tích khám phá dữ liệu trước khi xây dựng mô hình Machine Learning.
+Đây là bộ kiến thức nền tảng cực kỳ quan trọng trước khi học:
+
+- Machine Learning
+- Data Science
+- AI Engineering
+- Data Analysis
+- Deep Learning
+
+Bộ công cụ này giúp:
+
+- Hiểu dữ liệu
+- Phân tích dữ liệu
+- Làm sạch dữ liệu
+- Trực quan hóa dữ liệu
+- Chuẩn bị dữ liệu cho ML
+- Debug model
+- Tạo báo cáo dữ liệu
+
+---
+
+# 🧠 Tổng quan hệ sinh thái
+
+| Công cụ | Vai trò |
+|---|---|
+| NumPy | Nền tảng toán học |
+| Pandas | Xử lý dữ liệu |
+| Matplotlib | Visualization cơ bản |
+| Seaborn | Visualization thống kê |
+| EDA | Hiểu dữ liệu trước ML |
+
+---
+
+# 📌 1. EDA là gì?
+
+EDA (Exploratory Data Analysis)
+= Phân tích khám phá dữ liệu.
+
+---
 
 ## 🎯 Mục tiêu của EDA
 
-- Hiểu dữ liệu
-- Tìm missing values
-- Phát hiện outlier
-- Kiểm tra phân phối dữ liệu
+EDA giúp:
+
+- Hiểu dataset
+- Tìm vấn đề dữ liệu
+- Detect outlier
+- Check missing values
 - Phân tích correlation
-- Tìm pattern dữ liệu
 - Kiểm tra imbalance dataset
-- Chuẩn bị dữ liệu cho ML
+- Hiểu pattern dữ liệu
+- Chuẩn bị dữ liệu trước ML
 
 ---
 
-# 📌 2. Cốt lõi của EDA
-
-EDA giúp trả lời các câu hỏi:
-
-| Câu hỏi | Ý nghĩa |
-|---|---|
-| Dữ liệu có sạch không? | Missing / duplicate |
-| Có outlier không? | Giá trị bất thường |
-| Phân phối dữ liệu thế nào? | Gaussian / skew |
-| Feature nào quan trọng? | Correlation |
-| Dataset có imbalance không? | Bias model |
-| Có pattern gì không? | Xu hướng dữ liệu |
-
----
-
-# 📌 3. Pipeline EDA chuẩn thực tế
+# 📌 2. Tư duy cốt lõi của EDA
 
 ```text
-Load Data
-↓
-Check Shape
-↓
-Check Missing Values
-↓
-Check Data Types
-↓
-Statistics Summary
-↓
-Visualization
-↓
-Correlation Analysis
-↓
-Outlier Detection
-↓
-Feature Understanding
-↓
-Preprocessing
-↓
-Train Model
+Hiểu dữ liệu trước khi train model
+```
+
+Người mới thường:
+- train model trước
+- optimize model trước
+
+Nhưng thực tế:
+- dataset quality quan trọng hơn model.
+
+---
+
+# 📌 3. NumPy toàn diện
+
+# NumPy là gì?
+
+NumPy = Numerical Python.
+
+Là thư viện xử lý:
+
+- array
+- vector
+- matrix
+- linear algebra
+- toán học tốc độ cao
+
+---
+
+# 📌 Vì sao NumPy quan trọng?
+
+Machine Learning thật sự là:
+
+- vector
+- matrix
+- tensor
+- thống kê
+- linear algebra
+
+NumPy là nền tảng cho toàn bộ phần này.
+
+---
+
+# 📌 NumPy dùng trong ML để làm gì?
+
+| Công việc | Vai trò |
+|---|---|
+| Matrix operations | Cực kỳ quan trọng |
+| Statistics | Mean / Std |
+| Optimization | Gradient |
+| Vectorization | Tăng tốc |
+| Linear algebra | ML core |
+
+---
+
+# 📌 Ví dụ NumPy
+
+```python
+import numpy as np
+
+arr = np.array([1,2,3])
+
+print(arr)
 ```
 
 ---
 
-# 📌 4. Matplotlib là gì?
+# 📌 Kiến thức NumPy bắt buộc
+
+## Phải biết:
+
+- array
+- shape
+- reshape
+- slicing
+- indexing
+- broadcasting
+- vectorization
+- matrix multiplication
+
+---
+
+# 📌 NumPy trong thực tế
+
+NumPy được dùng trong:
+
+- Machine Learning
+- Deep Learning
+- Computer Vision
+- NLP
+- Data Science
+
+Rất nhiều framework build dựa trên tư duy NumPy.
+
+---
+
+# 📌 4. Pandas toàn diện
+
+# Pandas là gì?
+
+Pandas là thư viện xử lý dữ liệu mạnh nhất Python.
+
+---
+
+# 📌 Pandas dùng để làm gì?
+
+| Công việc | Vai trò |
+|---|---|
+| Read CSV/Excel | Load dataset |
+| Cleaning | Làm sạch dữ liệu |
+| Filtering | Lọc dữ liệu |
+| Merge | Nối bảng |
+| Missing Values | Xử lý null |
+| Feature Engineering | Chuẩn bị ML |
+| Groupby | Thống kê |
+
+---
+
+# 📌 DataFrame là gì?
+
+DataFrame:
+- giống Excel table
+- nhưng mạnh hơn rất nhiều.
+
+---
+
+# 📌 Ví dụ Pandas
+
+```python
+import pandas as pd
+
+df = pd.read_csv("data.csv")
+
+print(df.head())
+```
+
+---
+
+# 📌 Những hàm Pandas quan trọng
+
+## Kiểm tra dữ liệu
+
+```python
+print(df.info())
+print(df.describe())
+```
+
+---
+
+## Missing values
+
+```python
+df.isnull().sum()
+```
+
+---
+
+## Filtering
+
+```python
+df[df["salary"] > 5000]
+```
+
+---
+
+## Groupby
+
+```python
+df.groupby("department").mean()
+```
+
+---
+
+# 📌 Pandas trong thực tế
+
+Pandas gần như bắt buộc trong:
+
+- Data Analysis
+- AI Engineering
+- ML Engineering
+- Data Science
+
+---
+
+# 📌 5. Visualization là gì?
+
+Visualization:
+
+```text
+Biến dữ liệu thành hình ảnh
+```
+
+Mục tiêu:
+
+- hiểu pattern
+- hiểu xu hướng
+- detect vấn đề
+- report dữ liệu
+- giải thích model
+
+---
+
+# 📌 6. Matplotlib toàn diện
+
+# Matplotlib là gì?
 
 Matplotlib là thư viện visualization nền tảng trong Python.
 
-## 📌 Dùng để:
+---
+
+# 📌 Dùng để:
 
 - Vẽ biểu đồ
-- Trực quan hóa dữ liệu
-- Phân tích dữ liệu
-- Debug ML model
-- Dashboard cơ bản
+- Visualization ML
+- Monitoring model
+- Training visualization
+- Technical report
 
-## 📌 Import
+---
+
+# 📌 Import Matplotlib
 
 ```python
 import matplotlib.pyplot as plt
@@ -85,276 +291,295 @@ import matplotlib.pyplot as plt
 
 ---
 
-# 📌 5. Seaborn là gì?
+# 📌 Những biểu đồ quan trọng
 
-Seaborn là thư viện visualization được xây dựng trên Matplotlib.
-
-## 📌 Ưu điểm
-
-- Đẹp hơn
-- Code ngắn hơn
-- Hỗ trợ thống kê mạnh
-- Tối ưu cho EDA
-
-## 📌 Import
-
-```python
-import seaborn as sns
-```
-
----
-
-# 📌 6. Matplotlib vs Seaborn
-
-| Matplotlib | Seaborn |
+| Chart | Dùng khi |
 |---|---|
-| Low-level | High-level |
-| Tuỳ biến mạnh | Visualization đẹp |
-| Code dài hơn | Code ngắn hơn |
-| Khó hơn | Dễ dùng hơn |
-| Linh hoạt cao | Tối ưu EDA |
+| Line Plot | Xu hướng |
+| Bar Chart | So sánh |
+| Histogram | Distribution |
+| Scatter Plot | Correlation |
+| Pie Chart | Tỷ lệ |
 
 ---
 
-# 📌 7. Những biểu đồ quan trọng nhất trong ML
-
----
-
-## 7.1 Histogram
-
-### 📌 Mục đích
-
-Dùng để xem phân phối dữ liệu.
-
-### 📌 Ví dụ
+# 📌 Line Plot
 
 ```python
-plt.hist(df["salary"])
+plt.plot(x, y)
 plt.show()
 ```
 
-### 📌 Giúp phát hiện
+Dùng cho:
 
-- Gaussian distribution
-- Right skew
-- Left skew
-- Bất thường dữ liệu
+- Time series
+- Accuracy/loss
+- Monitoring
 
 ---
 
-## 7.2 Boxplot
-
-### 📌 Mục đích
-
-Dùng để detect outlier.
-
-### 📌 Ví dụ
+# 📌 Histogram
 
 ```python
-sns.boxplot(x=df["price"])
+plt.hist(df["age"])
 plt.show()
 ```
 
-### 📌 Ý nghĩa
+Dùng để:
 
-- Điểm nằm xa hộp = outlier
+- xem phân phối dữ liệu
+- detect skew
+- hiểu dataset
 
 ---
 
-## 7.3 Scatter Plot
-
-### 📌 Mục đích
-
-Phân tích mối quan hệ giữa 2 biến.
-
-### 📌 Ví dụ
+# 📌 Scatter Plot
 
 ```python
 plt.scatter(df["area"], df["price"])
 plt.show()
 ```
 
-### 📌 Dùng để
+Dùng để:
 
-- Kiểm tra linear relationship
-- Detect cluster
-- Detect outlier
+- correlation
+- cluster
+- outlier
 
 ---
 
-## 7.4 Heatmap
+# 📌 Bar Chart
 
-### 📌 Mục đích
+```python
+plt.bar(names, values)
+plt.show()
+```
 
-Hiển thị correlation matrix.
+---
 
-### 📌 Ví dụ
+# 📌 Custom biểu đồ
+
+## Title
+
+```python
+plt.title("Sales Report")
+```
+
+---
+
+## Label
+
+```python
+plt.xlabel("Month")
+plt.ylabel("Revenue")
+```
+
+---
+
+## Grid
+
+```python
+plt.grid(True)
+```
+
+---
+
+## Save figure
+
+```python
+plt.savefig("chart.png")
+```
+
+---
+
+# 📌 Matplotlib trong ML
+
+Dùng để visualize:
+
+- train loss
+- validation loss
+- accuracy
+- prediction result
+- confusion matrix
+
+---
+
+# 📌 7. Seaborn toàn diện
+
+# Seaborn là gì?
+
+Seaborn là thư viện visualization được xây dựng trên Matplotlib.
+
+---
+
+# 📌 Ưu điểm của Seaborn
+
+- đẹp hơn
+- code ngắn hơn
+- tối ưu EDA
+- mạnh về thống kê
+
+---
+
+# 📌 Boxplot
+
+```python
+sns.boxplot(x=df["salary"])
+```
+
+Dùng để:
+- detect outlier
+
+---
+
+# 📌 Heatmap
 
 ```python
 sns.heatmap(df.corr(), annot=True)
-plt.show()
 ```
 
-### 📌 Rất quan trọng cho
-
-- Feature Selection
-- Multicollinearity
+Dùng để:
+- correlation analysis
+- feature selection
 
 ---
 
-## 7.5 Countplot
-
-### 📌 Mục đích
-
-Kiểm tra imbalance dataset.
-
-### 📌 Ví dụ
-
-```python
-sns.countplot(x=df["label"])
-plt.show()
-```
-
----
-
-## 7.6 Pairplot
-
-### 📌 Mục đích
-
-Xem quan hệ tổng thể giữa các feature.
-
-### 📌 Ví dụ
+# 📌 Pairplot
 
 ```python
 sns.pairplot(df)
-plt.show()
 ```
+
+Dùng để:
+- xem quan hệ tổng thể giữa các feature.
 
 ---
 
-# 📌 8. Missing Values
+# 📌 8. Correlation
 
-## 📌 Kiểm tra
+# Correlation là gì?
+
+Correlation = mức độ liên quan giữa features.
+
+---
+
+# 📌 Giá trị correlation
+
+| Giá trị | Ý nghĩa |
+|---|---|
+| 1 | Liên quan mạnh |
+| -1 | Ngược chiều mạnh |
+| 0 | Không liên quan |
+
+---
+
+# 📌 Tại sao correlation quan trọng?
+
+Giúp:
+
+- feature selection
+- detect multicollinearity
+- hiểu dataset
+
+---
+
+# 📌 9. Missing Values
+
+# Missing values là gì?
+
+Dữ liệu bị thiếu.
+
+Ví dụ:
+- tuổi bị null
+- salary trống
+
+---
+
+# 📌 Kiểm tra missing
 
 ```python
 df.isnull().sum()
 ```
 
-## 📌 Ảnh hưởng
+---
 
-- Model lỗi
-- Accuracy giảm
-- Bias dữ liệu
+# 📌 Ảnh hưởng
 
-## 📌 Cách xử lý
-
-- Drop rows
-- Mean
-- Median
-- Mode
-- Predict missing values
+- model lỗi
+- accuracy giảm
+- bias dữ liệu
 
 ---
 
-# 📌 9. Duplicate Data
+# 📌 Cách xử lý
 
-## 📌 Kiểm tra
-
-```python
-df.duplicated().sum()
-```
-
-## 📌 Ảnh hưởng
-
-- Overfitting
-- Sai thống kê
+- drop
+- mean
+- median
+- mode
+- prediction filling
 
 ---
 
 # 📌 10. Outlier
 
-## 📖 Khái niệm
+# Outlier là gì?
 
-Outlier là dữ liệu bất thường.
+Dữ liệu bất thường.
 
 Ví dụ:
-- Nhà giá quá cao
-- Lương bất thường
-- Sensor lỗi
+- lương quá cao
+- tuổi bất thường
+- sensor lỗi
 
-## 📌 Ảnh hưởng
+---
 
-Đặc biệt nguy hiểm với:
-- Linear Regression
-- Logistic Regression
-- Statistical models
+# 📌 Ảnh hưởng của outlier
+
+- bias model
+- loss tăng
+- accuracy giảm
+- regression bị ảnh hưởng mạnh
+
+---
+
+# 📌 Detect outlier
+
+```python
+sns.boxplot(x=df["salary"])
+```
 
 ---
 
 # 📌 11. Distribution
 
-## 📖 Phân phối dữ liệu
+# Distribution là gì?
 
-Một số loại phổ biến:
-
-- Normal Distribution
-- Right Skew
-- Left Skew
-
-## 📌 Tại sao quan trọng?
-
-Nhiều model ML hoạt động tốt hơn với dữ liệu gần Gaussian.
+Phân phối dữ liệu.
 
 ---
 
-# 📌 12. Correlation
+# 📌 Các loại phổ biến
 
-## 📖 Khái niệm
-
-Correlation thể hiện mức độ liên quan giữa các feature.
-
-## 📌 Kiểm tra
-
-```python
-df.corr()
-```
-
-## 📌 Ý nghĩa
-
-| Giá trị | Ý nghĩa |
+| Distribution | Ý nghĩa |
 |---|---|
-| 1 | Liên quan mạnh cùng chiều |
-| -1 | Liên quan mạnh ngược chiều |
-| 0 | Không liên quan |
+| Normal | Gaussian |
+| Right Skew | Lệch phải |
+| Left Skew | Lệch trái |
 
 ---
 
-# 📌 13. Multicollinearity
+# 📌 Vì sao distribution quan trọng?
 
-## 📖 Khái niệm
-
-Khi nhiều feature chứa thông tin giống nhau.
-
-## 📌 Ảnh hưởng
-
-Đặc biệt xấu với:
-- Linear Regression
-- Logistic Regression
-
-## 📌 Giải pháp
-
-- Remove feature
-- PCA
-- Feature Selection
+Nhiều model ML hoạt động tốt hơn khi dữ liệu gần Gaussian.
 
 ---
 
-# 📌 14. Feature Scaling
+# 📌 12. Feature Scaling
 
-## 📖 Vai trò trong EDA
+# Feature Scaling là gì?
 
-EDA giúp phát hiện:
-- Feature scale quá chênh lệch
+Chuẩn hóa scale dữ liệu.
 
 Ví dụ:
 
@@ -365,34 +590,23 @@ Ví dụ:
 
 ---
 
-## 📌 Model cần scaling
+# 📌 Model cần scaling
 
 - KNN
 - SVM
 - Logistic Regression
 - Neural Network
 
-## 📌 Model ít cần scaling
+---
+
+# 📌 Model ít cần scaling
 
 - Random Forest
 - XGBoost
 
 ---
 
-# 📌 15. EDA ảnh hưởng model như thế nào?
-
-EDA ảnh hưởng trực tiếp tới:
-
-- Accuracy
-- Overfitting
-- Underfitting
-- Feature Quality
-- Training Speed
-- Stability của model
-
----
-
-# 📌 16. Workflow EDA thực tế
+# 📌 13. Workflow EDA thực tế
 
 ```python
 import pandas as pd
@@ -400,209 +614,248 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load data
+
 df = pd.read_csv("data.csv")
 
 # Basic info
-print(df.shape)
 print(df.info())
 print(df.describe())
 
 # Missing values
 print(df.isnull().sum())
 
-# Histogram
-df.hist(figsize=(12,8))
-
 # Correlation
 sns.heatmap(df.corr(), annot=True)
 
+# Distribution
+plt.hist(df["age"])
+
 # Outlier
-sns.boxplot(x=df["price"])
+sns.boxplot(x=df["salary"])
 
 plt.show()
 ```
 
 ---
 
-# 📌 17. Khi nào dùng từng biểu đồ?
-
-| Biểu đồ | Dùng khi |
-|---|---|
-| Histogram | Xem phân phối |
-| Boxplot | Detect outlier |
-| Scatter Plot | Quan hệ 2 biến |
-| Heatmap | Correlation |
-| Countplot | Imbalance |
-| Line Chart | Time Series |
-| Pairplot | Dataset nhỏ |
-
----
-
-# 📌 18. EDA trong dự án thực tế
-
-## 🏠 House Price Prediction
-
-EDA kiểm tra:
-- Giá nhà
-- Diện tích
-- Correlation
-- Outlier
-- Distribution
-
----
-
-## 📧 Spam Email Detection
-
-EDA kiểm tra:
-- Imbalance
-- Từ xuất hiện nhiều
-- Độ dài email
-- Pattern spam
-
----
-
-## 👥 Customer Churn
-
-EDA kiểm tra:
-- Hành vi khách hàng
-- Correlation với churn
-- Nhóm khách dễ rời bỏ
-
----
-
-# 📌 19. Những lỗi phổ biến người mới mắc
-
-| Lỗi | Hậu quả |
-|---|---|
-| Không check missing | Model lỗi |
-| Không detect outlier | Accuracy thấp |
-| Không visualize | Không hiểu data |
-| Không check imbalance | Bias model |
-| Chỉ train model | Không hiểu dataset |
-| Không xem correlation | Feature dư thừa |
-
----
-
-# 📌 20. Kiến thức thực chiến cần vững
-
-## 🔥 Bắt buộc phải biết
-
-- Histogram
-- Boxplot
-- Heatmap
-- Correlation
-- Missing values
-- Outlier
-- Distribution
-- Imbalance dataset
-- Feature Scaling
-
----
-
-# 📌 21. Lộ trình học đúng
+# 📌 14. Quan hệ giữa các thư viện
 
 ```text
-Pandas
+NumPy
 ↓
-Matplotlib
+Pandas build trên NumPy
 ↓
-Seaborn
+Matplotlib visualize data
 ↓
-EDA Project
+Seaborn enhance visualization
 ↓
-Feature Engineering
+EDA
 ↓
 Machine Learning
 ```
 
 ---
 
-# 📌 22. Project nên thực hành
+# 📌 15. Pipeline ML thực tế
 
-## 📌 Beginner
+```text
+Load Data
+↓
+Pandas xử lý dữ liệu
+↓
+EDA
+↓
+Visualization
+↓
+Feature Engineering
+↓
+Convert NumPy arrays
+↓
+Train ML model
+```
 
-- Titanic Dataset
-- House Price Analysis
+---
+
+# 📌 16. Những lỗi người mới thường gặp
+
+| Lỗi | Hậu quả |
+|---|---|
+| Không check null | Model lỗi |
+| Không EDA | Không hiểu data |
+| Không visualize | Bỏ lỡ pattern |
+| Không scaling | Model kém |
+| Chỉ train model | Không hiểu dataset |
+| Không detect outlier | Accuracy thấp |
+
+---
+
+# 📌 17. Trong thực tế đi làm
+
+# Data Analyst
+
+Dùng:
+
+- Pandas
+- Seaborn
+- Matplotlib
+
+---
+
+# AI Engineer
+
+Dùng:
+
+- NumPy
+- Pandas
+- Visualization
+- ML pipeline
+
+---
+
+# ML Engineer
+
+NumPy rất quan trọng.
+
+---
+
+# 📌 18. Thứ tự học đúng
+
+```text
+Python
+↓
+NumPy
+↓
+Pandas
+↓
+Matplotlib
+↓
+Seaborn
+↓
+EDA
+↓
+Machine Learning
+```
+
+---
+
+# 📌 19. Project nên thực hành
+
+# Beginner
+
+- Titanic EDA
 - Sales Analysis
+- Student Score Analysis
 
-## 📌 Intermediate
+---
 
+# Intermediate
+
+- House Price Analysis
 - Customer Churn
 - Spam Email Analysis
 
-## 📌 Advanced
+---
 
-- Financial Data Analysis
-- Real-time Dashboard
-- ML Monitoring
+# Advanced
+
+- ML Dashboard
+- Financial Analysis
+- Real-time Monitoring
 
 ---
 
-# 📌 23. Tư duy đúng trong thực tế
+# 📌 20. Kiến thức thực chiến cần cực vững
 
-Một AI Engineer / Data Scientist tốt sẽ:
+## Bắt buộc:
 
-- Không train model ngay
-- Luôn EDA trước
-- Hiểu dữ liệu trước khi optimize model
-- Visualization để hiểu business
-- Tập trung dataset quality
-
-👉 Dataset tốt thường quan trọng hơn model mạnh.
-
----
-
-# 🚀 Tổng Kết
-
-EDA và Data Visualization là nền tảng cực kỳ quan trọng trong:
-
-- Machine Learning
-- Data Science
-- AI Engineering
-- Data Analysis
-
-Một người mạnh EDA thường:
-- Debug model nhanh hơn
-- Feature engineering tốt hơn
-- Hiểu dữ liệu sâu hơn
-- Làm dự án thực tế hiệu quả hơn
+- NumPy arrays
+- Pandas DataFrame
+- Missing values
+- Correlation
+- Histogram
+- Heatmap
+- Boxplot
+- Feature Scaling
+- Visualization
+- EDA workflow
 
 ---
 
-# 🛠️ Công nghệ liên quan
+# 📌 21. Tư duy đúng trong thực tế
 
-## 📌 Libraries phổ biến
+Người mới thường nghĩ:
 
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Plotly
-- Scikit-learn
+```text
+Model là quan trọng nhất
+```
 
----
+Nhưng thực tế:
 
-# 📚 Tài liệu nên học tiếp
-
-Sau chủ đề này nên học:
-
-1. Pandas nâng cao
-2. Feature Engineering
-3. Statistics for ML
-4. Machine Learning Algorithms
-5. Data Cleaning thực chiến
-6. Dashboard & BI
+```text
+Data > Model
+```
 
 ---
 
-# 🎯 Mục tiêu cuối cùng
+# 📌 22. Tổng kết
 
-Biết cách:
+## NumPy
+
+= nền tảng toán học của ML.
+
+---
+
+## Pandas
+
+= nền tảng xử lý dữ liệu của ML.
+
+---
+
+## Matplotlib
+
+= nền tảng visualization.
+
+---
+
+## Seaborn
+
+= visualization thống kê mạnh.
+
+---
+
+## EDA
+
+= bước bắt buộc trước khi train model.
+
+---
+
+# 📌 23. Mục tiêu cuối cùng
+
+Sau khi học xong chủ đề này cần có khả năng:
 
 - Đọc dataset
 - Hiểu dataset
-- Tìm vấn đề dataset
-- Visualize dữ liệu đúng
-- Chuẩn bị dữ liệu cho Machine Learning
-- Làm EDA như người đi làm thực tế
+- Cleaning dữ liệu
+- Visualization dữ liệu
+- Detect vấn đề dữ liệu
+- Làm EDA thực tế
+- Chuẩn bị dataset cho Machine Learning
+- Debug dữ liệu trước khi train model
+
+---
+
+# 🚀 Final Conclusion
+
+Nếu muốn đi theo:
+
+- AI Engineer
+- ML Engineer
+- Data Scientist
+- Data Analyst
+
+thì:
+
+## Pandas + NumPy + Visualization + EDA
+
+là nền móng gần như bắt buộc phải cực kỳ vững trước khi học Machine Learning nâng cao.
 
