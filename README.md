@@ -1,4 +1,4 @@
-# 📊 COMPLETE README — Data Visualization & EDA Foundation
+# 📊 Data Visualization & EDA Foundation
 
 # Chủ đề 0: Trực quan hóa dữ liệu và EDA
 ## (Pandas • NumPy • Matplotlib • Seaborn • Data Analysis • Visualization)
